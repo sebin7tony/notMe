@@ -1,0 +1,88 @@
+/* Your app's CSS, go crazy, make it your own */
+
+{font-size:105px !important;}
+
+.ionic-logo {
+  display: block;
+  margin: 15px auto;
+  width: 96px;
+  height: 96px;
+}
+
+.modal {
+  	
+  display: block;
+  position: absolute;
+  top: 10% !important;
+  left: 15% !important;
+  right: 15% !important;
+  bottom : auto !important;
+  z-index: 10 !important;
+  width: auto !important;
+  min-height: initial !important;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.right-button{
+	
+	float:right;
+}
+
+.got-header{
+	
+	padding-top:45px;
+}
+
+/* .list{
+	
+	margin-bottom: 5px;
+} */
+
+.fade-in {
+  -webkit-transform: scale(0.0);
+  transform: scale(0.0);
+  opacity: 0;
+}
+.fade-in.ng-enter, .fade-in > .ng-enter {
+  -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 250ms;
+  transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 250ms;
+}
+.fade-in.ng-enter-active,
+.fade-in > .ng-enter-active {
+  -webkit-transform: scale(1.0);
+  transform: scale(1.0);
+  opacity: 1;
+}
+
+.fade-in.ng-leave, .fade-in > .ng-leave {
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+}
+
+.list {
+  margin-bottom: 0px ;
+}
+
+.mysearch{
+	position:relative;
+  	z-index:9999;
+}
+
+ion-scroll[delegate-handle=taskScroll] {
+  height: calc(100vh - 115px);
+}
+
+ion-scroll[delegate-handle=taskScroll1] {
+  height: calc(100vh - 90px);
+}
+
+.item-radio .radio-icon {
+
+	padding-top: 8px !important;
+}
+
+.attach .item-content{
+	
+	padding: 10px 45px 10px 10px !important;
+} 

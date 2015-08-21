@@ -1,0 +1,21 @@
+
+  	<ion-nav-bar class="bar-positive">
+
+      	<ion-nav-back-button ng-show="!$state.includes('app.home')" class="button-icon button-clear ion-ios7-arrow-back">
+        </ion-nav-back-button>
+
+	      <!--
+	      Use primary and secondary, so buttons correctly map to the side familiar to users of each platform.
+	      ion-nav-buttons must be immediate descendants of the ion-view or ion-nav-bar element
+	      (basically, don't wrap it in another div).
+	      -->
+      	<ion-nav-buttons side="right">
+        	<button  ng-show="$state.includes('app.home')" ui-sref="app.new-node" ng-click="clearNote()" class="button button-icon button-clear ion-compose"></button>
+      	</ion-nav-buttons>
+      	<ion-nav-buttons side="right">
+        	<button  ng-show="$state.includes('app.home-category-note')" ui-sref="app.home" class="button button-icon button-clear ion-home"></button>
+      	</ion-nav-buttons>
+
+    </ion-nav-bar>
+
+<ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>

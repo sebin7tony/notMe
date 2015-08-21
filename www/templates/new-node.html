@@ -1,0 +1,70 @@
+<ion-view title="Create Note" >
+  <ion-content>
+  	 
+  	 <ion-scroll delegate-handle="taskScroll1" direction="y">
+  	 <div class="list">
+  		<label class="item item-input " style="padding : 2px;margin : 2px;">
+    		<span class="input-label">Title</span>
+    		<input type="text" placeholder="Title" ng-model="memNote.title">
+  		</label>
+  		<label class="item item-input " style="margin : 2px;">
+    		<span class="input-label">Category</span>
+    		<button class="button button-clear button-assertive" ui-sref="app.category">{{selectedCategory}}</button>
+  		</label>
+  		
+  		<label class="item item-input" style="margin : 2px;">
+    		<span class="input-label">Description</span>
+    		<textarea rows="5" cols="10" ng-model="memNote.description" style="margin-right : 2px;" placeholder="Eg: I have kept my passport in grey shelf 2 drawer"></textarea>
+  		</label>
+  		<label class="item item-input " style="margin : 2px;">
+    		<span class="input-label">Attachment</span>
+    		<button class="button button-small button-positive" ng-click="modal9.show()">Choose attachment</button>
+  		</label>
+  		<label class="item item-input" style="margin : 2px;">
+  			<div class="row ">
+  				<div class="col col-20">
+  					<a class="item item-thumbnail-left" href="#">
+      					<img src="img/ionic.png">
+    				</a>
+  				</div>
+  				<div class="col col-20">
+  					<a class="item item-thumbnail-left" href="#">
+      					<img src="img/Chrysanthemum.jpg">
+    				</a>
+  				</div>
+  				<div class="col col-20">
+  					<a class="item item-thumbnail-left" href="#">
+      					<img src="img/Hydrangeas.jpg">
+    				</a>
+    			</div>
+    		
+    		
+  				<!-- <div class="col col-20">
+  					<a class="item item-thumbnail-left" href="#">
+      					<img src="img/Jellyfish.jpg">
+    				</a>
+  				</div>
+  				
+  				<div class="col col-20">
+  					<a class="item item-thumbnail-left" href="#">
+      					<img src="img/Lighthouse.jpg">
+    				</a>
+  				</div> -->
+			</div>
+	    	
+  		</label>
+	</div>
+	
+	</ion-scroll>
+	 
+	
+	
+  </ion-content>
+  <div class="bar bar-footer bar-positive">
+  		<button class="button button-icon ion-close-circled" ng-click="cancelNote()"></button>
+  		
+  		<button class="button button-icon ion-checkmark-circled" ng-click="submitNote()"></button>
+	</div>
+</ion-view>
+
+ 

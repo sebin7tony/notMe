@@ -1,0 +1,22 @@
+<ion-view title="NotME">
+
+	<ion-content class="has-header">
+		<div class="list mysearch col" style="">
+ 		 <div class="item item-input-inset">
+    		<label class="item item-input item-input-wrapper">
+      			<i class="icon ion-search placeholder-icon"></i>
+     		 	<input type="text" ng-model="searchCategHome.category" placeholder="Search" style="padding-right:20%;"></input> 
+    		</label>
+  		</div>
+	  </div> 
+	  <ion-scroll delegate-handle="taskScroll" direction="y">
+            <ion-list show-delete="true">
+      		<ion-item ng-repeat="categ in categories | filter:searchCategHome.category track by $index" ng-click="toHomeCategory(categ)">
+      			<ion-delete-button class="ion-minus-circled" ng-click="removeCategory(categ);$event.stopPropagation()"></ion-delete-button>
+        		<h3>{{categ}}</h3>
+      		</ion-item>
+    	  </ion-list>
+      </ion-scroll>
+	</ion-content>
+	
+</ion-view>

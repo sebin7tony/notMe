@@ -1,0 +1,46 @@
+<ion-modal-view >
+	
+	<div class="modal" style="padding:5px !important;">
+	
+      <div class="bar bar-header bar-balanced">
+  		<h1 class="title">Choose attachment type</h1> 
+	  </div>
+   
+      <div class="got-header">   
+	      <div class="list attach" style="margin : 10px;">
+	      		<label class="item item-radio">
+    				<input type="radio" ng-model="attachment.type" value="camera">
+    				<div class="item-content">Camera</div>
+    				<i class="radio-icon ion-checkmark"></i>
+  				</label>
+  				<label class="item item-radio">
+    				<input type="radio" ng-model="attachment.type" value="location">
+    				<div class="item-content">Location</div>
+    				<i class="radio-icon ion-checkmark"></i>
+  				</label>
+  				<!-- <label class="item item-radio">
+    				<input type="radio" ng-model="attachment.type" value="gallary">
+    				<div class="item-content">Gallery</div>
+    				<i class="radio-icon ion-checkmark"></i>
+  				</label> -->
+  				<label class="item item-radio">
+    				<input type="radio" ng-model="attachment.type" value="file">
+    				<div class="item-content">Browse file</div>
+    				<i class="radio-icon ion-checkmark"></i>
+  				</label>
+  			</div>
+	      	<div class="row">
+	      		<div class="col col-50">
+	      			<button class="button button-positive ion-close"  ng-click="modal9.hide()"></button>
+	      		</div>
+	      		<div class="col col-50">
+	      			<div class="right-button">
+	      				<button class="button button-positive ion-checkmark"  ng-click="openAttachment()"></button>
+	      			</div>	
+	      		</div>
+	      	</div>
+	      
+      </div>
+    </div>
+    
+  </ion-modal-view>
